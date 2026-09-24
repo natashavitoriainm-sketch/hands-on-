@@ -15,8 +15,8 @@ import java.util.Scanner;
 	    numero = entrada.nextInt();
 	    
 	    if (numero % 2 == 0) {
-      System.out.println(" PAR ");
-      }
+        System.out.println(" PAR ");
+        }
         
 	    else {
 	    System.out.println(" ÏMPAR ");
@@ -112,9 +112,31 @@ public class Main
 }
 
 4-
+import java.util.Scanner;
 
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner entrada = new Scanner(System.in);
+	    
+        double nota;
+        
+        System.out.print("Digite uma nota entre 0 e 100: ");
+        nota = entrada.nextDouble();
+        
+        System.out.print("Correto. ");
+        
+        while (nota < 0 || nota > 100) {
 
+        System.out.print("Nota é inválida. Digite novamente: ");
+        nota = entrada.nextDouble();
+        
+        }
+	  }   
+	}
 
+5-
 
 
 
