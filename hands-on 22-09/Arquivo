@@ -1,6 +1,6 @@
 ATIVIDADES
 
-1-
+1-Par ou ímpar
 import java.util.Scanner;
 
  public class Main
