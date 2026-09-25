@@ -204,7 +204,57 @@ public class Main
      System.out.println("Saldo final será: " + saldo);
 	 
 6-
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        double compra;
+        int categoria;
+        double desconto;
+        double valorFinal;
+        
+        System.out.print("Digite o valor da compra: ");
+        compra = entrada.nextDouble();
+
+        System.out.print("Digite a categoria: ");
+        categoria = entrada.nextInt();
+        
+        if (categoria == 1) {
+        desconto = compra * 0.05;
+        
+         valorFinal = compra - desconto;
+
+         System.out.println("Valor do desconto: " + desconto);
+       
+         System.out.println("Valor final a pagar: " + valorFinal);
+        
+        }else if (categoria == 2) {
+        desconto = compra * 0.10;
+       
+        valorFinal = compra - desconto;
+        
+        System.out.println("Valor do desconto: " + desconto);
+       
+        System.out.println("Valor final a pagar: " + valorFinal);
+
+        }else if (categoria == 3) {
+        desconto = compra * 0.15;
+        valorFinal = compra - desconto;
+        
+        System.out.println("Valor do desconto: " + desconto);
+       
+        System.out.println("Valor final a pagar: " + valorFinal);
+       
+        }else {
+        System.out.println("Categoria inválida");
+        }
+       
+    }
+       
+       
 
 
 
